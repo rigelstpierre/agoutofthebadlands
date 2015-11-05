@@ -1,0 +1,71 @@
+// _body.scss
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: $default, Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: $colorTextBody;
+  background: #1e2124;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+  font-weight:normal;
+  /* TRANSITION */
+  @include transition(
+    color 150ms,
+    background 150ms
+  );
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  line-height:1.45;
+  margin:1rem 0;
+}
+
+
+h1 {
+  font-size:em($fontSizeHeading1);
+  font-weight:normal;
+}
+
+h2 {
+  font-size:em($fontSizeHeading2);
+  font-weight:normal;
+}
+h3 {
+  font-size:em($fontSizeHeading3);
+  font-weight:600;
+}
+h4 {
+  font-size:em($fontSizeHeading4);
+  font-weight: 600;
+}
+h5 {
+  font-size:em($fontSizeHeading5);
+  font-weight:normal;
+}
+h6 {
+  font-size:em($fontSizeHeading6);
+  font-weight: 600;
+}
+p {
+  line-height:1.5;
+}

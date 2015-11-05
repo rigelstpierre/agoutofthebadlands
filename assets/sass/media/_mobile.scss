@@ -1,0 +1,21 @@
+// _mobile.scss
+
+@include media(mobile) {
+  .right {
+    display: none;
+  }
+  .left {
+    overflow-y: visible;
+    input[type="email"] {
+      width: 76%;
+    }
+  }
+  .mobile-hero-image {
+    display: block;
+    width: 100%;
+    height: 30%;
+    background-image: url(../images/cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

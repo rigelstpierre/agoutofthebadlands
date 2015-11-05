@@ -1,0 +1,33 @@
+// _buttons.scss
+
+.btn {
+  
+
+  &:active { 
+    @include transform(translateY(5px));
+  }
+  
+
+
+  /**
+   * Button Icon
+   * Use sub-inheritance classes for positioning of nested fa icons
+   */
+  &.btn-icon {
+
+    .fa {
+      top:1px;
+      font-size:24px;
+      color: #000;
+      @include opacity(0.35);
+    }
+
+    span {
+      position:relative;
+      top:-2px;
+    }
+  }
+
+
+ 
+}
