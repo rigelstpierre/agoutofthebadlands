@@ -1268,6 +1268,9 @@ article:after {
 .left p {
   text-align: center;
 }
+.left h2 {
+  text-align: center;
+}
 .left .title {
   width: 65%;
   margin: 0 auto;

@@ -1,8 +1,7 @@
-fifty-html
+Aaron Gillespie Out of the Badlands
 ===============
 
-## Fifty HTML Prototyping Template
------------------------------------
+Simple site for collecting emails and sharing new music.
 
 #### Includes
 * SASS (SCSS)
@@ -17,4 +16,4 @@ fifty-html
 #### Usage
 1. Clone to a directory a CD into it
 2. Run `bundle`
-3. Run `guard -i` to watch the project for changes and auto-compile SASS, HAML, etc. 
+3. Run `guard -i` to watch the project for changes and auto-compile SASS, HAML, etc.
