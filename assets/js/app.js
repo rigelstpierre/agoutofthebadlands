@@ -302,7 +302,7 @@
         }
 
         $('#mc-form').ajaxChimp({
-            url: 'http://aarongillespie.us12.list-manage.com/subscribe/post?u=920a56f1300150f571f27857b&amp;id=6ff3e57975',
+            url: 'http://aarongillespie.us12.list-manage.com/subscribe/post?u=920a56f1300150f571f27857b&amp;id=03c00cf932',
             callback: callbackFunction
         });
 
