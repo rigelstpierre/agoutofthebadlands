@@ -286,15 +286,24 @@
     $(document).ready(function(){
 
         App.init();
-        $('#mc-form button').click(function(e){
-            e.preventDefault();
+        // $('#mc-form button').click(function(e){
+        //     e.preventDefault();
 
-            $(this).parent().fadeOut();
-            $('.audio').fadeIn();
-        });
+        //     $(this).parent().fadeOut();
+        //     $('.audio').fadeIn();
+        // });
+
+        function callbackFunction (resp) {
+            if (resp.result === 'success') {
+                $('#mc-form').fadeOut();
+                $('.audio').fadeIn();
+
+            }
+        }
 
         $('#mc-form').ajaxChimp({
-            url: 'http://aarongillespie.us12.list-manage.com/subscribe/post?u=920a56f1300150f571f27857b&amp;id=6ff3e57975'
+            url: 'http://aarongillespie.us12.list-manage.com/subscribe/post?u=920a56f1300150f571f27857b&amp;id=6ff3e57975',
+            callback: callbackFunction
         });
 
 
